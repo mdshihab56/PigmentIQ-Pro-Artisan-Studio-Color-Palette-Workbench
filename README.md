@@ -15,7 +15,9 @@
 
 Engineered with **high-performance 120fps hardware-accelerated rendering**, it completely eliminates browser GPU lag while delivering razor-sharp modern aesthetics, custom PC installed font selection, and authentic brand color chemistry.
 
-Whether you work on **stretched canvas, cartridge paper, canvas pads, wood, glass, plastic, or clay**, with **acrylic, oil, watercolor, gouache, pastels, brush pens, markers, or graphite pencils**, PigmentIQ solves the timeless artist problem: *“How do I mix that exact color?”* and *“Which pencil darkness and surface prep do I need?”*
+Whether you work on stretched canvas, cartridge paper, canvas pads, wood, glass, plastic, or clay, with acrylic, oil, watercolor, gouache, pastels, brush pens, markers, or graphite pencils, PigmentIQ solves the timeless artist problem: “How do I mix that exact color?” and “Which pencil darkness and surface prep do I need?
+
+
 ---
 ## Data Flow
 <img width="8000" height="4500" alt="PigmentIQ Pro flow chart" src="https://github.com/user-attachments/assets/ca26ae42-c156-4f71-9cb9-c73989c3224a" />
@@ -147,23 +149,32 @@ PigmentIQ is engineered with 100% pure vanilla web standards and `FileReader` AP
 ## Previews
 <img width="1920" height="1080" alt="Screenshot (5086)" src="https://github.com/user-attachments/assets/5fb7bb37-8929-4601-af60-b9ce5caee117" />
 
+---
 <img width="1920" height="1080" alt="Screenshot (5087)" src="https://github.com/user-attachments/assets/814cec56-6aca-46ce-992d-467c3e14feea" />
 
+---
 <img width="1920" height="1080" alt="Screenshot (5088)" src="https://github.com/user-attachments/assets/2ad95f7b-4ad6-4237-94ae-a31dbc16c055" />
 
+---
 <img width="1920" height="1080" alt="Screenshot (5089)" src="https://github.com/user-attachments/assets/da0ff33d-bd6c-4915-8053-7b807671be0b" />
 
+---
 <img width="1920" height="1080" alt="Screenshot (5090)" src="https://github.com/user-attachments/assets/0572c96f-15a1-462c-ad60-e752d31c2664" />
 
+---
 <img width="1920" height="1080" alt="Screenshot (5091)" src="https://github.com/user-attachments/assets/4925f013-baeb-4758-ba2c-36e447c0ce3a" />
 
 
+---
 <img width="1920" height="1080" alt="Screenshot (5092)" src="https://github.com/user-attachments/assets/f8f7b4a4-34d0-4b6f-ac6a-7d3e57b63993" />
 
+---
 <img width="1920" height="1080" alt="Screenshot (5093)" src="https://github.com/user-attachments/assets/ac5078a0-3a95-4f36-876b-5854ee9d4ce2" />
 
+---
 <img width="1920" height="1080" alt="Screenshot (5094)" src="https://github.com/user-attachments/assets/06d49db8-33c7-4147-bd29-50143dfe09f5" />
 
+---
 <img width="1920" height="1080" alt="Screenshot (5095)" src="https://github.com/user-attachments/assets/582b2e58-2e1f-4d15-b429-2eb9c4133413" />
 
 
