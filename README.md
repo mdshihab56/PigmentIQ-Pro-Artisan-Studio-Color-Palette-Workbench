@@ -54,6 +54,11 @@ Whether you work on **stretched canvas, cartridge paper, canvas pads, wood, glas
   - **Brustro**: Heavy Body Acrylics, 300 GSM 100% Cotton Rag Papers.
   - **Copic**: Ciao & Sketch Alcohol Markers.
   - **Sakura**: Pigma Micron Archival Pens & Koi Watercolors.
+  - **Keep Smiling**: Painting Colors, Art & Craft Supplies.
+  - **HiMi**: Jelly Gouache, Gouache Color Sets.
+  - **Prismacolor**: Colored Pencils, Markers.
+  - **Royal Talens**: Watercolor, Oil & Acrylic.
+  - **Liquitex**: Acrylic Paint, Acrylic Mediums.
 
 ### 6.  Surfaces & Substrates Master Guide
 - Comprehensive preparation, priming, compatibility ratings, and varnishing instructions for:
