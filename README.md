@@ -1,4 +1,4 @@
-# PigmentIQ - Artisan Studio & Color Palette Workbench
+# PigmentIQ Pro- Artisan Studio & Color Palette Workbench
 
 > **Created by Md. Shihab Sikder**  
 > **Role**: Creative Coder, ML & IoT Enthusiast  
@@ -9,7 +9,7 @@
 
 ##  Overview
 
-**PigmentIQ** (also known as *Artisan Studio & Color Palette Workbench*) is an ultra-fast, stutter-free, professional studio application and color chemistry dashboard engineered for traditional painters, sketch artists, illustrators, and computational designers.
+**PigmentIQ Pro** (also known as *Artisan Studio & Color Palette Workbench*) is an ultra-fast, stutter-free, professional studio application and color chemistry dashboard engineered for traditional painters, sketch artists, illustrators, and computational designers.
 
 Engineered with **high-performance 120fps hardware-accelerated rendering**, it completely eliminates browser GPU lag while delivering razor-sharp modern aesthetics, custom PC installed font selection, and authentic brand color chemistry.
 
