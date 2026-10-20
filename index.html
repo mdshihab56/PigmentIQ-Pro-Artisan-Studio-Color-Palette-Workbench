@@ -1,0 +1,4095 @@
+<!doctype html>
+<html lang="en" data-theme="atelier-dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>PigmentIQ PRO</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://copyicon.com/api/icon-svg?iconId=material-symbols-light%3Apalette&height=48&color=%23279fff"
+    />
+    <!-- Google Fonts: Poppins Master Artisan Family (Weights: 100 to 900 + Italics) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <meta
+      name="description"
+      content="All-in-one art color palette extractor, Mont Marte shade combo generator, sketch pencil darkness advisor, surfaces and art brands workbench. Created for artists by Md. Shihab Sikder."
+    />
+  </head>
+  <body>
+    <!-- PigmentIQ launch splash -->
+    <div
+      class="pigment-splash"
+      id="pigment-splash"
+      role="status"
+      aria-label="PigmentIQ loading"
+    >
+      <div class="splash-artmark" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="splash-wordmark">Pigment<span>IQ</span></div>
+      <div class="splash-rule" aria-hidden="true"><i></i></div>
+      <p class="splash-tagline">
+        Made for <b>Artists</b>, <b>Creators</b>, <b>Makers</b> &amp; All.
+      </p>
+      <span class="splash-caption">YOUR CREATIVE COLOR WORKSPACE</span>
+    </div>
+
+    <!-- Top Navigation Header -->
+    <header class="header-bar">
+      <div class="brand-wrapper" id="brand-home-link" title="PigmentIQ Studio">
+        <div class="brand-icon-box">
+          <!-- Flat / Material Palette Logo Icon -->
+          <svg
+            viewBox="0 0 24 24"
+            width="18"
+            height="18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+            <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+            <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+            <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+            <path
+              d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.563-2.512 5.563-5.563C22 6.5 17.5 2 12 2z"
+            />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>PigmentIQ <span class="version-tag">PRO</span></h1>
+          <div class="brand-subtitle">
+            ChromaAtelier • Studio & Color Chemistry Workbench
+          </div>
+        </div>
+      </div>
+
+      <!-- Segmented Navigation Dock with Flat Vector Icons -->
+      <nav class="nav-tabs" aria-label="Main Navigation">
+        <button class="nav-tab-btn active" data-tab="extractor">
+          <svg
+            class="nav-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+            <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+            <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+            <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+            <path
+              d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.563-2.512 5.563-5.563C22 6.5 17.5 2 12 2z"
+            />
+          </svg>
+          <span>Extractor & Mixer</span>
+        </button>
+        <button class="nav-tab-btn" data-tab="montmarte">
+          <svg
+            class="nav-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"
+            />
+            <line x1="7" y1="7" x2="7.01" y2="7" />
+          </svg>
+          <span>Mont Marte Studio</span>
+        </button>
+        <button class="nav-tab-btn" data-tab="sketch">
+          <svg
+            class="nav-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z" />
+          </svg>
+          <span>Sketch & Pencils</span>
+        </button>
+        <button class="nav-tab-btn" data-tab="brands">
+          <svg
+            class="nav-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+            <path
+              d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+            />
+          </svg>
+          <span>Brands</span>
+        </button>
+        <button class="nav-tab-btn" data-tab="surfaces">
+          <svg
+            class="nav-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polygon points="12 2 2 7 12 12 22 7 12 2" />
+            <polyline points="2 17 12 22 22 17" />
+            <polyline points="2 12 12 17 22 12" />
+          </svg>
+          <span>Surfaces</span>
+        </button>
+      </nav>
+
+      <!-- Live local date and time -->
+      <div
+        class="live-clock"
+        id="pigmentiq-live-clock"
+        aria-label="Current local date and time"
+      >
+        <span class="clock-daydate" id="clock-daydate"
+          >Monday | 19 October, 2026</span
+        >
+        <span class="clock-divider" aria-hidden="true"></span>
+        <time class="clock-time" id="clock-time">07:42:00 PM</time>
+      </div>
+
+      <!-- Header Actions with Flat Icons -->
+      <div class="header-actions">
+        <!--<button
+          class="icon-btn"
+          id="btn-audio-toggle"
+          title="Toggle Tactile Audio Feedback"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            width="18"
+            height="18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+            <path
+              d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"
+            />
+          </svg>
+        </button> -->
+        <button
+          class="icon-btn"
+          id="btn-open-settings"
+          title="Studio Preferences "
+        >
+          <svg
+            viewBox="0 0 24 24"
+            width="18"
+            height="18"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="3" />
+            <path
+              d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="app-container">
+      <!-- ==========================================
+             TAB 1: COLOR EXTRACTOR & MIXER
+             ========================================== -->
+      <section class="tab-content active" id="tab-extractor">
+        <!-- Hero Stats Banner -->
+        <div class="hero-banner">
+          <div class="hero-text">
+            <h2>Color Palette Extractor & Paint Mixing Chemist</h2>
+            <p>
+              Upload any reference image from Pinterest or your camera.
+              PigmentIQ will sample the artwork, isolate harmonious pigment
+              shades, and formulate step-by-step physical paint mixing recipes
+              using authentic brand colors.
+            </p>
+          </div>
+          <div class="quick-stats">
+            <div class="stat-item">
+              <div class="stat-num">42+</div>
+              <div class="stat-label">Mont Marte Shades</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">18</div>
+              <div class="stat-label">Pencil Grades (9H-14B)</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">8</div>
+              <div class="stat-label">Popular Brands</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Upload & Eyedropper Stage Grid -->
+        <div class="dropzone-container">
+          <!-- Dropzone / File Loader -->
+          <div class="dropzone-card" id="image-dropzone">
+            <input
+              type="file"
+              id="image-upload-input"
+              accept="image/*"
+              style="display: none"
+            />
+            <div class="dropzone-icon">
+              <svg
+                viewBox="0 0 24 24"
+                width="40"
+                height="40"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+            </div>
+            <h3>Upload Reference Art Image</h3>
+            <p>
+              Drag and drop your Pinterest reference, phone photo, or sketch
+              here. Supports Ctrl+V paste!
+            </p>
+            <div class="upload-btn-row">
+              <button
+                class="primary-btn"
+                onclick="document.getElementById('image-upload-input').click()"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="16"
+                  height="16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="17 8 12 3 7 8" />
+                  <line x1="12" y1="3" x2="12" y2="15" />
+                </svg>
+                <span>Choose Image File</span>
+              </button>
+            </div>
+
+            <!-- Preset Sample Artworks -->
+            <div class="sample-presets-row">
+              <span
+                style="
+                  font-size: 0.75rem;
+                  color: var(--text-muted);
+                  font-family: var(--font-mono);
+                "
+                >Sample Studies:</span
+              >
+              <button class="preset-chip" data-sample="sunset">
+                Sunset Impressionism
+              </button>
+              <button class="preset-chip" data-sample="botanical">
+                Botanical Watercolor
+              </button>
+              <button class="preset-chip" data-sample="portrait">
+                Portrait Warmth
+              </button>
+              <button class="preset-chip" data-sample="abstract">
+                Fluid Abstract
+              </button>
+            </div>
+          </div>
+
+          <!-- Interactive Eyedropper Viewport -->
+          <div class="image-stage-card">
+            <div class="stage-toolbar">
+              <div class="stage-title">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="16"
+                  height="16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+                <span>Interactive Canvas Eyedropper</span>
+              </div>
+              <button
+                class="secondary-btn"
+                id="btn-toggle-value-study"
+                style="font-size: 0.75rem; padding: 4px 10px"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="14"
+                  height="14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+                <span>B&W Value Study</span>
+              </button>
+            </div>
+
+            <div class="canvas-viewport" id="canvas-viewport">
+              <img
+                id="art-preview-img"
+                alt="Reference Art"
+                style="display: none"
+              />
+              <!-- Magnifying Loupe -->
+              <div class="eyedropper-loupe" id="eyedropper-loupe">
+                <div class="loupe-swatch" id="loupe-swatch"></div>
+                <div class="loupe-crosshair"></div>
+              </div>
+            </div>
+            <div
+              style="
+                font-size: 0.75rem;
+                color: var(--text-muted);
+                margin-top: 0.5rem;
+                text-align: center;
+              "
+            >
+              Hover to magnify • Click any pixel to generate its physical paint
+              recipe
+            </div>
+          </div>
+        </div>
+
+        <!-- Extracted Dominant Palette -->
+        <div class="section-header">
+          <div class="section-title">
+            <h2>Extracted Dominant Palette</h2>
+            <span class="badge">HARMONIC SWATCHES</span>
+          </div>
+          <div class="section-actions-row">
+            <button
+              class="primary-btn export-trigger-btn"
+              id="btn-export-palette"
+              title="Export this color palette and recipe as A4 PDF, PNG, or JPG"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="15"
+                height="15"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              <span>Export A4 Palette Sheet</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="palette-grid" id="dominant-palette-grid">
+          <!-- Swatch cards injected dynamically -->
+        </div>
+
+        <!-- Active Workbench & Mixing Formula Grid -->
+        <div class="workbench-grid">
+          <!-- Left Column: Universal Physical Paint Recipe -->
+          <div class="workbench-card">
+            <div class="section-title" style="margin-bottom: 1rem">
+              <h2>Physical Mixing Recipe</h2>
+              <span class="badge">SUBTRACTIVE PIGMENT</span>
+            </div>
+
+            <!-- Active Target Color Header -->
+            <div class="active-color-preview-bar">
+              <div class="large-color-blob" id="active-color-blob"></div>
+              <div class="active-color-meta">
+                <div class="active-hex-code" id="active-hex-display">
+                  #D62568
+                </div>
+                <div class="active-color-badges">
+                  <span class="active-badge" id="active-hsl-display"
+                    >HSL(337°, 71%, 49%)</span
+                  >
+                  <span class="active-badge" id="active-cmyk-display"
+                    >CMYK(0%, 83%, 51%, 16%)</span
+                  >
+                  <span class="active-badge" id="active-value-display"
+                    >Value: Zone 5.1</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Visual Mixing Ratio Bar -->
+            <div
+              style="
+                margin-bottom: 0.4rem;
+                font-size: 0.75rem;
+                color: var(--text-muted);
+                font-family: var(--font-mono);
+              "
+            >
+              Proportional Ratio Distribution:
+            </div>
+            <div class="mixing-ratio-bar" id="mixing-ratio-bar">
+              <!-- Slices injected dynamically -->
+            </div>
+
+            <!-- Ingredient parts breakdown -->
+            <div class="recipe-ingredients-list" id="recipe-ingredients-list">
+              <!-- Injected dynamically -->
+            </div>
+
+            <!-- Step by Step Mixing Guide -->
+            <div class="mixing-steps-box">
+              <h4>
+                <svg
+                  viewBox="0 0 24 24"
+                  width="16"
+                  height="16"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  style="vertical-align: middle; margin-right: 4px"
+                >
+                  <path
+                    d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"
+                  />
+                </svg>
+                Palette Mixing Technique
+              </h4>
+              <ul class="steps-list" id="mixing-steps-list">
+                <!-- Injected dynamically -->
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right Column: Mont Marte Exact Match & Sketch Pencil Advisor -->
+          <div style="display: flex; flex-direction: column; gap: 1.5rem">
+            <!-- Mont Marte Combo Match Card -->
+            <div class="workbench-card" id="active-mm-match-card">
+              <!-- Injected dynamically -->
+            </div>
+
+            <!-- Sketch Pencil Recommendation Card -->
+            <div class="workbench-card" id="active-pencil-rec-card">
+              <!-- Injected dynamically -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+             TAB 2: MONT MARTE DEDICATED STUDIO
+             ========================================== -->
+      <section class="tab-content" id="tab-montmarte">
+        <div class="section-header">
+          <div class="section-title">
+            <h2>Mont Marte Master Color Studio</h2>
+            <span class="badge">42 AUTHENTIC SHADES</span>
+          </div>
+        </div>
+
+        <!-- "When Any Color Doesn't Match" Solver Card -->
+        <div class="combo-solver-card">
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 1rem;
+              flex-wrap: wrap;
+              gap: 0.5rem;
+            "
+          >
+            <div>
+              <h3
+                style="
+                  font-size: 1.15rem;
+                  margin-bottom: 0.2rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5rem;
+                "
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="18"
+                  height="18"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"
+                  />
+                  <line x1="7" y1="7" x2="7.01" y2="7" />
+                </svg>
+                Mont Marte Target Color Matcher
+              </h3>
+              <p style="font-size: 0.82rem; color: var(--text-secondary)">
+                Pick any target color or enter your desired hex code: our engine
+                calculates the closest Mont Marte recipe using available stock
+                tubes!
+              </p>
+            </div>
+            <div class="combo-inputs-row" style="margin-bottom: 0">
+              <div class="color-input-bubble">
+                <input
+                  type="color"
+                  id="mm-custom-target-picker"
+                  value="#3A75C4"
+                />
+                <input
+                  type="text"
+                  id="mm-custom-hex-input"
+                  value="#3A75C4"
+                  class="mono"
+                  style="
+                    background: transparent;
+                    border: none;
+                    color: var(--text-primary);
+                    font-weight: 700;
+                    width: 80px;
+                    outline: none;
+                  "
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Live Combo Output Box -->
+          <div class="combo-result-box" id="mm-combo-result">
+            <!-- Calculated dynamically -->
+          </div>
+        </div>
+
+        <!-- Filter & Search Toolbar -->
+        <div class="mm-filter-bar">
+          <div class="search-input-wrap">
+            <span class="search-icon">
+              <svg
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+            </span>
+            <input
+              type="text"
+              class="search-input"
+              id="mm-search-input"
+              placeholder="Search by shade number (#01, #14) or color name (Ultramarine, Sienna)..."
+            />
+          </div>
+
+          <div class="kit-selector-pills">
+            <button class="kit-pill active" data-kit="all">
+              All Shades (42)
+            </button>
+            <button class="kit-pill" data-kit="set12">12-Set Starter</button>
+            <button class="kit-pill" data-kit="set18">18-Set Studio</button>
+            <button class="kit-pill" data-kit="set24">24-Set Artist</button>
+            <button class="kit-pill" data-kit="set36">36-Set Master</button>
+          </div>
+        </div>
+
+        <!-- Mont Marte Tubes Grid -->
+        <div class="mm-colors-grid" id="mm-colors-grid">
+          <!-- Tube cards injected dynamically -->
+        </div>
+      </section>
+
+      <!-- ==========================================
+             TAB 3: SKETCH & GRAPHITE DARKNESS RECOMMENDER
+             ========================================== -->
+      <section class="tab-content" id="tab-sketch">
+        <div class="section-header">
+          <div class="section-title">
+            <h2>Graphite & Charcoal Darkness Matrix</h2>
+            <span class="badge">9H TO 14B • EE • CHARCOAL</span>
+          </div>
+          <div style="color: var(--text-secondary); font-size: 0.85rem">
+            From high-key technical guidelines (9H) to pitch-black
+            anti-reflective occlusion shadows (14B Pitt Matt & Charcoal).
+          </div>
+        </div>
+
+        <!-- Interactive Value Scale Slider Tool -->
+        <div class="workbench-card" style="margin-bottom: 2rem">
+          <h3
+            style="
+              font-size: 1.15rem;
+              margin-bottom: 0.5rem;
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+            "
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"
+              />
+            </svg>
+            Interactive Value-to-Pencil Advisor
+          </h3>
+          <p
+            style="
+              font-size: 0.85rem;
+              color: var(--text-secondary);
+              margin-bottom: 1.25rem;
+            "
+          >
+            Slide the luminance scale to simulate the tonal value in your
+            drawing and receive instant pencil grade recommendations.
+          </p>
+
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 0.5rem;
+            "
+          >
+            <span style="font-size: 0.8rem; font-weight: 700"
+              >Deep Shadow (0%)</span
+            >
+            <span
+              class="mono"
+              id="sketch-slider-val"
+              style="font-size: 1.1rem; font-weight: 800; color: var(--accent)"
+              >50%</span
+            >
+            <span style="font-size: 0.8rem; font-weight: 700"
+              >Pure Highlight (100%)</span
+            >
+          </div>
+
+          <div class="slider-container" style="margin-bottom: 1.25rem">
+            <input
+              type="range"
+              id="sketch-lum-slider"
+              min="0"
+              max="100"
+              value="50"
+              style="width: 100%"
+            />
+          </div>
+
+          <div
+            id="sketch-slider-rec"
+            style="
+              background: var(--bg-surface);
+              padding: 1rem 1.25rem;
+              border-radius: var(--radius-md);
+              border-left: 4px solid var(--accent);
+            "
+          >
+            <!-- Dynamic recommendation -->
+          </div>
+        </div>
+
+        <!-- Full Scale Grid -->
+        <div class="sketch-scale-grid" id="sketch-scale-grid">
+          <!-- Pencil cards injected dynamically -->
+        </div>
+
+        <!-- Artist Blending & Finishing Guide -->
+        <div class="workbench-card">
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.75rem">
+            Artist's Graphite & Charcoal Preservation Tools
+          </h3>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+              gap: 1rem;
+            "
+          >
+            <div
+              style="
+                background: var(--bg-surface);
+                padding: 1rem;
+                border-radius: var(--radius-md);
+                border: 1px solid var(--border-main);
+              "
+            >
+              <strong
+                style="
+                  color: var(--accent);
+                  display: block;
+                  margin-bottom: 0.35rem;
+                "
+                >Tortillons & Blending Stumps</strong
+              >
+              <p style="font-size: 0.82rem; color: var(--text-secondary)">
+                Never blend graphite with bare fingers! Skin oils oxidize
+                graphite, creating permanent shiny stains that repel further
+                pencil layers.
+              </p>
+            </div>
+            <div
+              style="
+                background: var(--bg-surface);
+                padding: 1rem;
+                border-radius: var(--radius-md);
+                border: 1px solid var(--border-main);
+              "
+            >
+              <strong
+                style="
+                  color: var(--accent);
+                  display: block;
+                  margin-bottom: 0.35rem;
+                "
+                >Kneaded Eraser Sculpting</strong
+              >
+              <p style="font-size: 0.82rem; color: var(--text-secondary)">
+                Pinch into fine points or flat edges to sculpt soft reflected
+                lights, cheek highlights, and clouds by lifting graphite rather
+                than rubbing.
+              </p>
+            </div>
+            <div
+              style="
+                background: var(--bg-surface);
+                padding: 1rem;
+                border-radius: var(--radius-md);
+                border: 1px solid var(--border-main);
+              "
+            >
+              <strong
+                style="
+                  color: var(--accent);
+                  display: block;
+                  margin-bottom: 0.35rem;
+                "
+                >14B Pitt Matt Anti-Glare Technique</strong
+              >
+              <p style="font-size: 0.82rem; color: var(--text-secondary)">
+                Traditional 8B-10B pencils exhibit a silvery metallic glare
+                under gallery lighting. 14B Pitt Matt utilizes carbon
+                formulation for zero-sheen matte black.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+             TAB 5: ART BRANDS ENCYCLOPEDIA
+             ========================================== -->
+      <section class="tab-content" id="tab-brands">
+        <div class="section-header">
+          <div class="section-title">
+            <h2>Popular Art Brands Encyclopedia</h2>
+            <span class="badge"
+              >CAMEL • DOMS • POSCA • FABER-CASTELL & MORE</span
+            >
+          </div>
+          <div style="color: var(--text-secondary); font-size: 0.85rem">
+            Technical specifications, medium formats, drying properties, and
+            recommended surfaces.
+          </div>
+        </div>
+
+        <div class="brands-grid" id="brands-encyclopedia-container">
+          <div class="brand-encyclo-card">
+            <div class="brand-card-top">
+              <span class="brand-badge-pill">Everyday Masterpiece</span>
+              <h3>Camel (Kokuyo Camlin)</h3>
+              <div class="brand-country">Origin: India / Japan</div>
+              <p class="brand-desc">
+                One of the most trusted and historic art manufacturers in South
+                Asia. Known for exceptionally rich pigment load at accessible
+                prices for students and master painters.
+              </p>
+            </div>
+            <div class="brand-mediums-accordion">
+              <div class="medium-pill-item">
+                <div class="medium-pill-title">Artists Acrylic Colours</div>
+                <div class="medium-pill-surfaces">
+                  Best on:
+                  <strong
+                    >Canvas, Cartridge Paper (200+ GSM), Wood, Primed
+                    Terracotta</strong
+                  >
+                </div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-secondary);
+                    margin-top: 3px;
+                  "
+                >
+                  Quick-drying, 100% acrylic emulsion, non-yellowing, high
+                  lightfastness ratings.
+                </div>
+
+                <div
+                  style="
+                    font-size: 0.72rem;
+                    color: var(--accent);
+                    margin-top: 5px;
+                    font-weight: 600;
+                  "
+                >
+                  Popular Shades: Cobalt Blue Hue, Sap Green, Permanent Yellow
+                  Deep, Crimson Lake, Raw Umber, Titanium White
+                </div>
+              </div>
+
+              <div class="medium-pill-item">
+                <div class="medium-pill-title">
+                  Artists Water Colours (Tubes & Cakes)
+                </div>
+                <div class="medium-pill-surfaces">
+                  Best on:
+                  <strong
+                    >Cold Pressed Watercolor Paper (300 GSM), Handmade Cotton
+                    Paper</strong
+                  >
+                </div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-secondary);
+                    margin-top: 3px;
+                  "
+                >
+                  Formulated with pure gum arabic binder. High transparency and
+                  excellent flow and blooming characteristics.
+                </div>
+
+                <div
+                  style="
+                    font-size: 0.72rem;
+                    color: var(--accent);
+                    margin-top: 5px;
+                    font-weight: 600;
+                  "
+                >
+                  Popular Shades: Gamboge Hue, Prussian Blue, Burnt Sienna,
+                  Chinese White, Viridian
+                </div>
+              </div>
+
+              <div class="medium-pill-item">
+                <div class="medium-pill-title">
+                  Camel Soft Pastels & Oil Pastels
+                </div>
+                <div class="medium-pill-surfaces">
+                  Best on:
+                  <strong
+                    >Textured Pastel Paper, Cartridge Paper, Suede Board</strong
+                  >
+                </div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-secondary);
+                    margin-top: 3px;
+                  "
+                >
+                  High pigment purity. Soft pastels blend smoothly with
+                  fingers/stumps; oil pastels resist water and permit sgraffito.
+                </div>
+              </div>
+
+              <div class="medium-pill-item">
+                <div class="medium-pill-title">Camel Brush Pens</div>
+                <div class="medium-pill-surfaces">
+                  Best on:
+                  <strong
+                    >Smooth Bristol Board, Heavyweight Cartridge, Watercolor
+                    paper</strong
+                  >
+                </div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-secondary);
+                    margin-top: 3px;
+                  "
+                >
+                  Enables hairline strokes to broad wash blends. Reactivates
+                  instantly with water brush.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="brand-encyclo-card">
+            <div class="brand-card-top">
+              <span class="brand-badge-pill">Vibrant & Versatile</span>
+              <h3>Doms</h3>
+              <div class="brand-country">
+                Origin: India / Italy (F.I.L.A Group)
+              </div>
+              <p class="brand-desc">
+                Renowned for innovative, vibrant, and extremely smooth art
+                supplies including industry-favorite brush pens, acrylic
+                markers, and colored pencils.
+              </p>
+            </div>
+            <div class="brand-mediums-accordion">
+              <div class="medium-pill-item">
+                <div class="medium-pill-title">
+                  Doms Brush Pens (Super Soft Tip)
+                </div>
+                <div class="medium-pill-surfaces">
+                  Best on:
+                  <strong
+                    >Smooth Cartridge Paper, Mixed Media Sheets,
+                    Sketchbooks</strong
+                  >
+                </div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-secondary);
+                    margin-top: 3px;
+                  "
+                >
+                  Signature ultra-flexible Japanese-style felt tip. Superb
+                  gradient blending, calligraphy, and wash illustrations.
+                </div>
+
+                <div
+                  style="
+                    font-size: 0.72rem;
+                    color: var(--accent);
+                    margin-top: 5px;
+                    font-weight: 600;
+                  "
+                >
+                  Popular Shades: Pastel Violet, Sky Blue, Meadow Green, Blush
+                  Pink, Apricot, Charcoal Grey
+                </div>
+              </div>
+
+              <div class="medium-pill-item">
+                <div class="medium-pill-title">
+                  Doms Acrylic Paint Markers (C3 Series)
+                </div>
+                <div class="medium-pill-surfaces">
+                  Best on:
+                  <strong
+                    >Glass, Canvas, Smooth Wood, Plastic, Stones, Metal,
+                    Shoes</strong
+                  >
+                </div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-secondary);
+                    margin-top: 3px;
+                  "
+                >
+                  Valve-action pump, waterproof once dry, high opacity even on
+                  dark surfaces.
+                </div>
+              </div>
+
+              <div class="medium-pill-item">
+                <div class="medium-pill-title">
+                  Doms Super Soft Oil Pastels & Color Pencils
+                </div>
+                <div class="medium-pill-surfaces">
+                  Best on:
+                  <strong>Cartridge Paper, Kraft Paper, Cardstock</strong>
+                </div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-secondary);
+                    margin-top: 3px;
+                  "
+                >
+                  Non-toxic, break-resistant lead, rich blending capability
+                  without white wax bloom.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="brand-encyclo-card">
+            <div class="brand-card-top">
+              <span class="brand-badge-pill">Pinnacle Precision</span>
+              <h3>Faber-Castell</h3>
+              <div class="brand-country">Origin: Germany (Since 1761)</div>
+              <p class="brand-desc">
+                The global gold standard in graphite, colored pencils, and fine
+                drawing media with over two centuries of German precision
+                engineering.
+              </p>
+            </div>
+            <div class="brand-mediums-accordion">
+              <div class="medium-pill-item">
+                <div class="medium-pill-title">
+                  Polychromos Artists' Colour Pencils
+                </div>
+                <div class="medium-pill-surfaces">
+                  Best on:
+                  <strong
+                    >Smooth & Vellum Bristol, Hot Pressed Paper, Wood,
+                    Canvas</strong
+                  >
+                </div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-secondary);
+                    margin-top: 3px;
+                  "
+                >
+                  Highest ASTM lightfastness (***), 3.8mm SV bonded
+                  break-resistant leads, buttery blendability.
+                </div>
+              </div>
+
+              <div class="medium-pill-item">
+                <div class="medium-pill-title">
+                  Albrecht Dürer Artists' Watercolour Pencils
+                </div>
+                <div class="medium-pill-surfaces">
+                  Best on: <strong>100% Cotton 300 GSM Watercolor Paper</strong>
+                </div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-secondary);
+                    margin-top: 3px;
+                  "
+                >
+                  Pigments dissolve completely with no residual pencil lines.
+                </div>
+              </div>
+
+              <div class="medium-pill-item">
+                <div class="medium-pill-title">
+                  Castell 9000 & Pitt Graphite Range
+                </div>
+                <div class="medium-pill-surfaces">
+                  Best on:
+                  <strong>Cartridge Paper, Smooth Bristol, Drawing Pads</strong>
+                </div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-secondary);
+                    margin-top: 3px;
+                  "
+                >
+                  Finely ground graphite and clay for consistent tone and smooth
+                  shading.
+                </div>
+              </div>
+
+              <div class="medium-pill-item">
+                <div class="medium-pill-title">
+                  Pitt Artist Pens (India Ink)
+                </div>
+                <div class="medium-pill-surfaces">
+                  Best on:
+                  <strong>All paper types, Bristol, Mixed Media</strong>
+                </div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-secondary);
+                    margin-top: 3px;
+                  "
+                >
+                  Pigmented India ink does not bleed through paper and is
+                  odorless.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="brand-encyclo-card">
+            <div class="brand-card-top">
+              <span class="brand-badge-pill">Royal Warrant Quality</span>
+              <h3>Winsor & Newton</h3>
+              <div class="brand-country">
+                Origin: United Kingdom (Since 1832)
+              </div>
+              <p class="brand-desc">
+                The historic English art materials pioneer, creators of the
+                world's most acclaimed watercolor and oil paints.
+              </p>
+            </div>
+            <div class="brand-mediums-accordion">
+              <div class="medium-pill-item">
+                <div class="medium-pill-title">
+                  Cotman & Professional Watercolours
+                </div>
+                <div class="medium-pill-surfaces">
+                  Best on:
+                  <strong
+                    >Cold Pressed & Rough 300 GSM 100% Cotton Rag Paper</strong
+                  >
+                </div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-secondary);
+                    margin-top: 3px;
+                  "
+                >
+                  Unmatched single-pigment purity in Professional line;
+                  economical high-load Cotman line.
+                </div>
+              </div>
+
+              <div class="medium-pill-item">
+                <div class="medium-pill-title">Galeria Acrylics</div>
+                <div class="medium-pill-surfaces">
+                  Best on:
+                  <strong>Primed Canvas, Heavy Paper, Board, Masonite</strong>
+                </div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-secondary);
+                    margin-top: 3px;
+                  "
+                >
+                  Free-flowing consistency that retains brush stroke peaks.
+                </div>
+              </div>
+
+              <div class="medium-pill-item">
+                <div class="medium-pill-title">
+                  Winton & Artists' Oil Colours
+                </div>
+                <div class="medium-pill-surfaces">
+                  Best on:
+                  <strong>Linen Canvas, Cotton Duck, Gessoed Hardboard</strong>
+                </div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-secondary);
+                    margin-top: 3px;
+                  "
+                >
+                  Slow open time allowing wet-in-wet blending for days.
+                </div>
+              </div>
+
+              <div class="medium-pill-item">
+                <div class="medium-pill-title">
+                  Promarker & Brushmarker (Alcohol Markers)
+                </div>
+                <div class="medium-pill-surfaces">
+                  Best on:
+                  <strong
+                    >Marker Bleedproof Paper, Smooth Cartridge Paper</strong
+                  >
+                </div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-secondary);
+                    margin-top: 3px;
+                  "
+                >
+                  Dual nibs, blendable with translucent layering.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="brand-encyclo-card">
+            <div class="brand-card-top">
+              <span class="brand-badge-pill">The Universal Marker</span>
+              <h3>Uni POSCA</h3>
+              <div class="brand-country">
+                Origin: Japan (Mitsubishi Pencil Co.)
+              </div>
+              <p class="brand-desc">
+                The world's benchmark acrylic water-based paint marker.
+                Completely opaque, odorless, and permanently adheres to
+                virtually any surface.
+              </p>
+            </div>
+            <div class="brand-mediums-accordion">
+              <div class="medium-pill-item">
+                <div class="medium-pill-title">
+                  POSCA Acrylic Paint Markers (PC-1MR to PC-17K)
+                </div>
+                <div class="medium-pill-surfaces">
+                  Best on:
+                  <strong
+                    >Canvas, Wood, Glass, Plastic, Metal, Leather, Terracotta,
+                    Paper</strong
+                  >
+                </div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-secondary);
+                    margin-top: 3px;
+                  "
+                >
+                  Lightfast, water-resistant once dry, layerable (light over
+                  dark!), waterproof on porous materials and fixable on
+                  glass/plastic with varnish or baking.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="brand-encyclo-card">
+            <div class="brand-card-top">
+              <span class="brand-badge-pill">Contemporary Artist Choice</span>
+              <h3>Brustro (Creative Hands)</h3>
+              <div class="brand-country">
+                Origin: India / International Curation
+              </div>
+              <p class="brand-desc">
+                Modern premium art supplies brand known for world-class papers,
+                heavy body acrylics, gouache sets, and specialized technical
+                tools.
+              </p>
+            </div>
+            <div class="brand-mediums-accordion">
+              <div class="medium-pill-item">
+                <div class="medium-pill-title">
+                  Artists' Heavy Body Acrylics & Gouache
+                </div>
+                <div class="medium-pill-surfaces">
+                  Best on:
+                  <strong
+                    >Stretched Canvas, Wood Panels, 300 GSM Mixed Media
+                    Paper</strong
+                  >
+                </div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-secondary);
+                    margin-top: 3px;
+                  "
+                >
+                  Dense pigment suspension, high viscosity for palette knife
+                  painting.
+                </div>
+              </div>
+
+              <div class="medium-pill-item">
+                <div class="medium-pill-title">
+                  Brustro Professional Papers & Sketchbooks
+                </div>
+                <div class="medium-pill-surfaces">
+                  Best on:
+                  <strong>Watercolors, Gouache, Acrylic, Charcoal, Ink</strong>
+                </div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-secondary);
+                    margin-top: 3px;
+                  "
+                >
+                  Withstands multiple washes, scrubbing, and masking fluid
+                  without buckling.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="brand-encyclo-card">
+            <div class="brand-card-top">
+              <span class="brand-badge-pill">Illustration Master</span>
+              <h3>Copic (Too Corporation)</h3>
+              <div class="brand-country">Origin: Japan</div>
+              <p class="brand-desc">
+                The gold standard alcohol marker for manga artists, concept
+                designers, and fine art illustrators worldwide.
+              </p>
+            </div>
+            <div class="brand-mediums-accordion">
+              <div class="medium-pill-item">
+                <div class="medium-pill-title">
+                  Copic Sketch & Ciao Alcohol Markers
+                </div>
+                <div class="medium-pill-surfaces">
+                  Best on:
+                  <strong
+                    >Bleedproof Marker Paper, Smooth Bristol Board (X-Press It
+                    Blending Card)</strong
+                  >
+                </div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-secondary);
+                    margin-top: 3px;
+                  "
+                >
+                  Refillable ink, replaceable nibs, permanent alcohol-based dye
+                  ink that dries acid-free.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="brand-encyclo-card">
+            <div class="brand-card-top">
+              <span class="brand-badge-pill">Archival Ink Standard</span>
+              <h3>Sakura Color Products</h3>
+              <div class="brand-country">Origin: Japan (Since 1921)</div>
+              <p class="brand-desc">
+                Inventors of the world's first oil pastel (Cray-Pas) and the
+                legendary Pigma archival ink.
+              </p>
+            </div>
+            <div class="brand-mediums-accordion">
+              <div class="medium-pill-item">
+                <div class="medium-pill-title">
+                  Pigma Micron Technical & Brush Pens
+                </div>
+                <div class="medium-pill-surfaces">
+                  Best on:
+                  <strong
+                    >Cartridge Paper, Watercolor Paper, Bristol Board,
+                    Vellum</strong
+                  >
+                </div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-secondary);
+                    margin-top: 3px;
+                  "
+                >
+                  Does not smear when painted over with watercolors or wet
+                  mediums.
+                </div>
+              </div>
+
+              <div class="medium-pill-item">
+                <div class="medium-pill-title">
+                  Koi Water Colors & Coloring Brush Pens
+                </div>
+                <div class="medium-pill-surfaces">
+                  Best on: <strong>Watercolor Paper, Sketch Pads</strong>
+                </div>
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--text-secondary);
+                    margin-top: 3px;
+                  "
+                >
+                  Includes refillable water brushes and built-in mixing
+                  palettes.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+             TAB 6: SURFACES & PAPERS GUIDE
+             ========================================== -->
+      <section class="tab-content" id="tab-surfaces">
+        <div class="section-header">
+          <div class="section-title">
+            <h2>Surfaces, Canvas & Substrates Master Guide</h2>
+            <span class="badge">PREPARATION • PRIMING • VARNISHING</span>
+          </div>
+          <div style="color: var(--text-secondary); font-size: 0.85rem">
+            Working with Canvas, Cartridge Paper, Canvas Pads, Watercolor Paper,
+            Glass, Plastic, Wood, and Terracotta.
+          </div>
+        </div>
+
+        <div class="surfaces-grid" id="surfaces-guide-container">
+          <div class="surface-guide-card">
+            <div class="surface-card-header">
+              <div>
+                <h3 style="font-size: 1.25rem">Canvas (Stretched & Panels)</h3>
+                <span
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--accent);
+                    font-weight: 600;
+                  "
+                  >Traditional Fine Art Substrates</span
+                >
+              </div>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">
+              The timeless standard for master painters. Woven from cotton duck
+              or linen, stretched over kiln-dried pine stretcher bars or mounted
+              on rigid MDF board.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 0.35rem">
+              <span
+                style="
+                  font-size: 0.75rem;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  color: var(--text-muted);
+                "
+              >
+                Available Formats & Tooth
+              </span>
+
+              <div
+                style="
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 6px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <strong>Stretched Cotton Duck</strong> • 10oz - 12oz (300-380
+                GSM) •
+                <span style="color: var(--accent); font-weight: 600"
+                  >Medium Grain</span
+                >
+                <div
+                  style="
+                    font-size: 0.73rem;
+                    color: var(--text-secondary);
+                    margin-top: 2px;
+                  "
+                >
+                  Best for: Acrylics, Oil Painting, Mixed Media Impasto
+                </div>
+              </div>
+
+              <div
+                style="
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 6px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <strong>Canvas Board / Panel</strong> • Rigid 3mm - 4mm MDF
+                backing •
+                <span style="color: var(--accent); font-weight: 600"
+                  >Fine to Medium</span
+                >
+                <div
+                  style="
+                    font-size: 0.73rem;
+                    color: var(--text-secondary);
+                    margin-top: 2px;
+                  "
+                >
+                  Best for: Plein air studies, heavy palette knife work,
+                  students
+                </div>
+              </div>
+
+              <div
+                style="
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 6px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <strong>Linen Canvas</strong> • Belgian / European flax •
+                <span style="color: var(--accent); font-weight: 600"
+                  >Ultra-fine to coarse</span
+                >
+                <div
+                  style="
+                    font-size: 0.73rem;
+                    color: var(--text-secondary);
+                    margin-top: 2px;
+                  "
+                >
+                  Best for: Archival portraiture, professional masterworks
+                  (highest longevity)
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 0.45rem">
+              <span
+                style="
+                  font-size: 0.75rem;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  color: var(--text-muted);
+                "
+              >
+                Medium Compatibility
+              </span>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Acrylic Colours (Heavy Body / Fluid / Satin)</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >Perfect (100%)</span
+                >
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Oil Colours</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >Perfect (100%)</span
+                >
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Acrylic Paint Markers (Posca, Doms)</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >Excellent (95%)</span
+                >
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Oil Pastels</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >Very Good (85%)</span
+                >
+              </div>
+            </div>
+
+            <div class="surface-prep-box">
+              <strong
+                style="
+                  display: block;
+                  margin-bottom: 3px;
+                  color: var(--text-primary);
+                "
+                >Surface Preparation:</strong
+              >
+              1. Inspect for tautness; insert corner keys if stretched canvas is
+              sagging.<br />2. If raw canvas: Apply 2 coats of Acrylic Gesso
+              with a wide flat brush in criss-cross strokes.<br />3. Allow 2-3
+              hours dry time, lightly sand with 240-grit sandpaper between coats
+              for satin finish.
+            </div>
+
+            <div
+              style="
+                font-size: 0.75rem;
+                color: var(--text-muted);
+                font-style: italic;
+              "
+            >
+              Varnishing: Once fully cured (72h for acrylics, 6-12 months for
+              oils), apply Acrylic Gloss/Satin Varnish with a wide flat wash
+              brush or spray can in dust-free environment.
+            </div>
+          </div>
+
+          <div class="surface-guide-card">
+            <div class="surface-card-header">
+              <div>
+                <h3 style="font-size: 1.25rem">Canvas Pads</h3>
+                <span
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--accent);
+                    font-weight: 600;
+                  "
+                  >Portable Fine Art Substrates</span
+                >
+              </div>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">
+              Glue-bound or spiral-bound pads containing real woven canvas
+              sheets primed with acrylic gesso. Combines the authentic tooth of
+              stretched canvas with the convenience of paper.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 0.35rem">
+              <span
+                style="
+                  font-size: 0.75rem;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  color: var(--text-muted);
+                "
+              >
+                Available Formats & Tooth
+              </span>
+
+              <div
+                style="
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 6px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <strong>Standard Primed Canvas Sheets</strong> • 280 - 300 GSM •
+                <span style="color: var(--accent); font-weight: 600"
+                  >Medium woven grain</span
+                >
+                <div
+                  style="
+                    font-size: 0.73rem;
+                    color: var(--text-secondary);
+                    margin-top: 2px;
+                  "
+                >
+                  Best for: Practice drills, color studies, classroom studies,
+                  easy framing in photo frames
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 0.45rem">
+              <span
+                style="
+                  font-size: 0.75rem;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  color: var(--text-muted);
+                "
+              >
+                Medium Compatibility
+              </span>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Acrylic Paints & Gouache</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >100%</span
+                >
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Oil Paint Studies</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >95%</span
+                >
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Pastel Pencils & Oil Pastels</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >90%</span
+                >
+              </div>
+            </div>
+
+            <div class="surface-prep-box">
+              <strong
+                style="
+                  display: block;
+                  margin-bottom: 3px;
+                  color: var(--text-primary);
+                "
+                >Surface Preparation:</strong
+              >
+              1. Peel or cut sheet from pad along the glue line.<br />2. Tape
+              securely on all four edges to a drawing board using low-tack
+              painter's masking tape to prevent curling.<br />3. Pre-primed; no
+              additional gesso required unless an ultra-smooth finish is
+              preferred.
+            </div>
+
+            <div
+              style="
+                font-size: 0.75rem;
+                color: var(--text-muted);
+                font-style: italic;
+              "
+            >
+              Varnishing: Allow full drying, apply spray varnish or mount onto
+              backing board for framing behind glass.
+            </div>
+          </div>
+
+          <div class="surface-guide-card">
+            <div class="surface-card-header">
+              <div>
+                <h3 style="font-size: 1.25rem">Cartridge & Sketching Paper</h3>
+                <span
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--accent);
+                    font-weight: 600;
+                  "
+                  >Paper & Boards</span
+                >
+              </div>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">
+              Uncoated, high-quality drawing paper with subtle tooth. An artist
+              essential for sketching, graphite, charcoal, colored pencils,
+              brush pens, and mixed media.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 0.35rem">
+              <span
+                style="
+                  font-size: 0.75rem;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  color: var(--text-muted);
+                "
+              >
+                Available Formats & Tooth
+              </span>
+
+              <div
+                style="
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 6px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <strong>Lightweight Cartridge</strong> • 90 - 120 GSM •
+                <span style="color: var(--accent); font-weight: 600"
+                  >Very light tooth</span
+                >
+                <div
+                  style="
+                    font-size: 0.73rem;
+                    color: var(--text-secondary);
+                    margin-top: 2px;
+                  "
+                >
+                  Best for: Quick gesture sketches, pencil studies, dry pen
+                  sketches
+                </div>
+              </div>
+
+              <div
+                style="
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 6px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <strong>Medium Weight Cartridge</strong> • 130 - 160 GSM •
+                <span style="color: var(--accent); font-weight: 600"
+                  >Medium fine tooth</span
+                >
+                <div
+                  style="
+                    font-size: 0.73rem;
+                    color: var(--text-secondary);
+                    margin-top: 2px;
+                  "
+                >
+                  Best for: Graphite pencil shading (HB-10B), colored pencils,
+                  soft pastels
+                </div>
+              </div>
+
+              <div
+                style="
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 6px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <strong>Heavyweight Mixed Media Cartridge</strong> • 180 - 250
+                GSM •
+                <span style="color: var(--accent); font-weight: 600"
+                  >Sturdy vellum finish</span
+                >
+                <div
+                  style="
+                    font-size: 0.73rem;
+                    color: var(--text-secondary);
+                    margin-top: 2px;
+                  "
+                >
+                  Best for: Doms & Camel brush pens, acrylic marker
+                  illustrations, light watercolor & gouache
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 0.45rem">
+              <span
+                style="
+                  font-size: 0.75rem;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  color: var(--text-muted);
+                "
+              >
+                Medium Compatibility
+              </span>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Graphite Pencils (HB - 14B) & Charcoal</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >100%</span
+                >
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Colored Pencils (Polychromos, Prismacolor)</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >100%</span
+                >
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Brush Pens (Doms, Camel) & Fineliners</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >95%</span
+                >
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Soft Pastels & Conte Crayons</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >90%</span
+                >
+              </div>
+            </div>
+
+            <div class="surface-prep-box">
+              <strong
+                style="
+                  display: block;
+                  margin-bottom: 3px;
+                  color: var(--text-primary);
+                "
+                >Surface Preparation:</strong
+              >
+              1. Choose acid-free / archival paper to prevent yellowing over
+              time.<br />2. For wet washes on 180+ GSM, tape down edges to a
+              stiff MDF board.<br />3. Keep a clean sheet of scrap paper under
+              your drawing wrist to prevent hand oil transfer.
+            </div>
+
+            <div
+              style="
+                font-size: 0.75rem;
+                color: var(--text-muted);
+                font-style: italic;
+              "
+            >
+              Varnishing: Protect pencil & pastel works with 2 misting passes of
+              Workable Art Fixative from 30cm away.
+            </div>
+          </div>
+
+          <div class="surface-guide-card">
+            <div class="surface-card-header">
+              <div>
+                <h3 style="font-size: 1.25rem">
+                  Watercolor Paper (Cold, Hot & Rough)
+                </h3>
+                <span
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--accent);
+                    font-weight: 600;
+                  "
+                  >Paper & Boards</span
+                >
+              </div>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">
+              Heavy cotton or cellulose paper treated with gelatin/synthetic
+              sizing to control moisture absorption, allowing luminous
+              watercolor pigments to float and bloom.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 0.35rem">
+              <span
+                style="
+                  font-size: 0.75rem;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  color: var(--text-muted);
+                "
+              >
+                Available Formats & Tooth
+              </span>
+
+              <div
+                style="
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 6px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <strong>Cold Pressed (NOT finish)</strong> • 300 GSM (140 lb) •
+                <span style="color: var(--accent); font-weight: 600"
+                  >Distinct dimpled texture</span
+                >
+                <div
+                  style="
+                    font-size: 0.73rem;
+                    color: var(--text-secondary);
+                    margin-top: 2px;
+                  "
+                >
+                  Best for: Universal choice - wet-on-wet washes, blooms,
+                  dry-brushing
+                </div>
+              </div>
+
+              <div
+                style="
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 6px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <strong>Hot Pressed (Smooth finish)</strong> • 300 GSM (140 lb)
+                •
+                <span style="color: var(--accent); font-weight: 600"
+                  >Silky smooth plate</span
+                >
+                <div
+                  style="
+                    font-size: 0.73rem;
+                    color: var(--text-secondary);
+                    margin-top: 2px;
+                  "
+                >
+                  Best for: Botanical illustrations, fine ink & wash, watercolor
+                  pencils, portraits
+                </div>
+              </div>
+
+              <div
+                style="
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 6px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <strong>Rough</strong> • 300 - 640 GSM (300 lb) •
+                <span style="color: var(--accent); font-weight: 600"
+                  >Deep rugged grain</span
+                >
+                <div
+                  style="
+                    font-size: 0.73rem;
+                    color: var(--text-secondary);
+                    margin-top: 2px;
+                  "
+                >
+                  Best for: Dramatic seascapes, granulating pigments, expressive
+                  loose strokes
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 0.45rem">
+              <span
+                style="
+                  font-size: 0.75rem;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  color: var(--text-muted);
+                "
+              >
+                Medium Compatibility
+              </span>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Watercolors (Cakes & Tubes)</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >100%</span
+                >
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Gouache & Aqua Color</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >100%</span
+                >
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Watercolor Pencils & Brush Pens</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >98%</span
+                >
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Acrylics (Diluted washes / Glazes)</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >90%</span
+                >
+              </div>
+            </div>
+
+            <div class="surface-prep-box">
+              <strong
+                style="
+                  display: block;
+                  margin-bottom: 3px;
+                  color: var(--text-primary);
+                "
+                >Surface Preparation:</strong
+              >
+              1. If paper is under 300 GSM, soak in clean water bath for 3
+              minutes and stretch onto a wooden drawing board using gummed
+              tape.<br />2. 300 GSM glued watercolor blocks can be painted on
+              directly without pre-stretching.<br />3. Use artist masking fluid
+              on dry paper to preserve brilliant white highlights.
+            </div>
+
+            <div
+              style="
+                font-size: 0.75rem;
+                color: var(--text-muted);
+                font-style: italic;
+              "
+            >
+              Varnishing: Frame behind UV-protective glass with a mat/mount; do
+              not apply liquid varnish directly over traditional watercolors.
+            </div>
+          </div>
+
+          <div class="surface-guide-card">
+            <div class="surface-card-header">
+              <div>
+                <h3 style="font-size: 1.25rem">Wood Panels & MDF / Pine</h3>
+                <span
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--accent);
+                    font-weight: 600;
+                  "
+                  >Rigid & Dimensional Substrates</span
+                >
+              </div>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">
+              Solid birch plywood, basswood cradle panels, MDF boards, and raw
+              pine slabs. Provides a solid, vibration-free surface that never
+              sags under heavy paint or knife work.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 0.35rem">
+              <span
+                style="
+                  font-size: 0.75rem;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  color: var(--text-muted);
+                "
+              >
+                Available Formats & Tooth
+              </span>
+
+              <div
+                style="
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 6px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <strong>Cradled Birch Plywood</strong> • Solid 1/4" face + pine
+                cradle •
+                <span style="color: var(--accent); font-weight: 600"
+                  >Ultra-smooth fine grain</span
+                >
+                <div
+                  style="
+                    font-size: 0.73rem;
+                    color: var(--text-secondary);
+                    margin-top: 2px;
+                  "
+                >
+                  Best for: Detailed oils, acrylics, resin pours, wood staining
+                </div>
+              </div>
+
+              <div
+                style="
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 6px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <strong>MDF / Hardboard Panel</strong> • Dense engineered wood •
+                <span style="color: var(--accent); font-weight: 600"
+                  >Uniform flat surface</span
+                >
+                <div
+                  style="
+                    font-size: 0.73rem;
+                    color: var(--text-secondary);
+                    margin-top: 2px;
+                  "
+                >
+                  Best for: Smooth portraiture, palette knife painting,
+                  experimental panels
+                </div>
+              </div>
+
+              <div
+                style="
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 6px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <strong>Raw Pine / Tree Slices</strong> • Natural live-edge log
+                cross-sections •
+                <span style="color: var(--accent); font-weight: 600"
+                  >Natural grain ridges</span
+                >
+                <div
+                  style="
+                    font-size: 0.73rem;
+                    color: var(--text-secondary);
+                    margin-top: 2px;
+                  "
+                >
+                  Best for: Rustic acrylics, pyrography + paint, folk art
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 0.45rem">
+              <span
+                style="
+                  font-size: 0.75rem;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  color: var(--text-muted);
+                "
+              >
+                Medium Compatibility
+              </span>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Acrylic Paints & Gels</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >100%</span
+                >
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Oil Paints</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >98%</span
+                >
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Acrylic Markers (Posca, Doms)</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >95%</span
+                >
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Wood Stains & Inks</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >95%</span
+                >
+              </div>
+            </div>
+
+            <div class="surface-prep-box">
+              <strong
+                style="
+                  display: block;
+                  margin-bottom: 3px;
+                  color: var(--text-primary);
+                "
+                >Surface Preparation:</strong
+              >
+              1. Sand thoroughly: Start with 120-grit, progress to 220-grit
+              along the woodgrain direction.<br />2. Wipe clean of all sawdust
+              using a damp lint-free cloth or tack cloth.<br />3. Apply 1 coat
+              of Sanding Sealer or PVA size to seal wood pores and prevent
+              tannin discoloration.
+            </div>
+
+            <div
+              style="
+                font-size: 0.75rem;
+                color: var(--text-muted);
+                font-style: italic;
+              "
+            >
+              Varnishing: Finish with high-gloss liquid acrylic varnish or clear
+              epoxy resin for an ultra-deep glass-like dimension.
+            </div>
+          </div>
+
+          <div class="surface-guide-card">
+            <div class="surface-card-header">
+              <div>
+                <h3 style="font-size: 1.25rem">Glass & Mirrors</h3>
+                <span
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--accent);
+                    font-weight: 600;
+                  "
+                  >Non-Porous Substrates</span
+                >
+              </div>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">
+              Smooth, non-porous silica glass, glass jars, framed window panes,
+              and decorative mirror surfaces for reverse glass painting and
+              vibrant translucent crafts.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 0.35rem">
+              <span
+                style="
+                  font-size: 0.75rem;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  color: var(--text-muted);
+                "
+              >
+                Available Formats & Tooth
+              </span>
+
+              <div
+                style="
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 6px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <strong>Picture Frame Glass / Sheets</strong> • •
+                <span style="color: var(--accent); font-weight: 600"
+                  >Zero tooth (Ultra-slick)</span
+                >
+                <div
+                  style="
+                    font-size: 0.73rem;
+                    color: var(--text-secondary);
+                    margin-top: 2px;
+                  "
+                >
+                  Best for: Reverse glass painting, modern signage, stained
+                  glass effects
+                </div>
+              </div>
+
+              <div
+                style="
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 6px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <strong>Glass Bottles & Jars</strong> • •
+                <span style="color: var(--accent); font-weight: 600"
+                  >Curved slick surface</span
+                >
+                <div
+                  style="
+                    font-size: 0.73rem;
+                    color: var(--text-secondary);
+                    margin-top: 2px;
+                  "
+                >
+                  Best for: Upcycling decor, floral vases, fairy light displays
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 0.45rem">
+              <span
+                style="
+                  font-size: 0.75rem;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  color: var(--text-muted);
+                "
+              >
+                Medium Compatibility
+              </span>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Acrylic Paint Markers (Posca, Doms C3)</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >95%</span
+                >
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Specialized Glass Paints (Pebeo Vitrea)</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >100%</span
+                >
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Acrylics mixed with Glass Medium / GAC 200</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >90%</span
+                >
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Alcohol Inks</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >92%</span
+                >
+              </div>
+            </div>
+
+            <div class="surface-prep-box">
+              <strong
+                style="
+                  display: block;
+                  margin-bottom: 3px;
+                  color: var(--text-primary);
+                "
+                >Surface Preparation:</strong
+              >
+              1. Deep clean glass with 99% Isopropyl Alcohol or glass cleaner to
+              eradicate oils, grease, and fingerprints.<br />2. Wear
+              latex/nitrile gloves when handling cleaned glass.<br />3. Avoid
+              sanding unless a frosted effect is desired.
+            </div>
+
+            <div
+              style="
+                font-size: 0.75rem;
+                color: var(--text-muted);
+                font-style: italic;
+              "
+            >
+              Varnishing: For decorative display, seal with crystal clear
+              acrylic spray sealer (2 light mist coats). For bakeable paints,
+              bake at 150°C (300°F) for 40 mins.
+            </div>
+          </div>
+
+          <div class="surface-guide-card">
+            <div class="surface-card-header">
+              <div>
+                <h3 style="font-size: 1.25rem">
+                  Plastic, Acrylic Sheets (Perspex) & Yupo
+                </h3>
+                <span
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--accent);
+                    font-weight: 600;
+                  "
+                  >Non-Porous Substrates</span
+                >
+              </div>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">
+              Polycarbonate, acrylic sheets (Plexiglass), synthetic waterproof
+              Yupo paper, and rigid plastic objects for contemporary fluid art
+              and pop illustrations.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 0.35rem">
+              <span
+                style="
+                  font-size: 0.75rem;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  color: var(--text-muted);
+                "
+              >
+                Available Formats & Tooth
+              </span>
+
+              <div
+                style="
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 6px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <strong>Clear Acrylic Sheets (Perspex)</strong> • •
+                <span style="color: var(--accent); font-weight: 600"
+                  >Zero tooth</span
+                >
+                <div
+                  style="
+                    font-size: 0.73rem;
+                    color: var(--text-secondary);
+                    margin-top: 2px;
+                  "
+                >
+                  Best for: Floating glass-like artwork, layered 3D acrylic
+                  paintings
+                </div>
+              </div>
+
+              <div
+                style="
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 6px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <strong>Yupo Synthetic Paper</strong> • •
+                <span style="color: var(--accent); font-weight: 600"
+                  >Silky polypropylene sheet</span
+                >
+                <div
+                  style="
+                    font-size: 0.73rem;
+                    color: var(--text-secondary);
+                    margin-top: 2px;
+                  "
+                >
+                  Best for: Alcohol inks, liquid watercolors, experimental
+                  marbling
+                </div>
+              </div>
+
+              <div
+                style="
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 6px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <strong>Rigid Molded Plastics / Phone Cases</strong> • •
+                <span style="color: var(--accent); font-weight: 600"
+                  >Smooth slick polymer</span
+                >
+                <div
+                  style="
+                    font-size: 0.73rem;
+                    color: var(--text-secondary);
+                    margin-top: 2px;
+                  "
+                >
+                  Best for: Custom custom illustration, sneaker art, phone cases
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 0.45rem">
+              <span
+                style="
+                  font-size: 0.75rem;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  color: var(--text-muted);
+                "
+              >
+                Medium Compatibility
+              </span>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Acrylic Markers (Posca, Doms)</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >98%</span
+                >
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Alcohol Inks (Piñata, Ranger)</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >100%</span
+                >
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Acrylic Paint (with Plastic Primer)</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >90%</span
+                >
+              </div>
+            </div>
+
+            <div class="surface-prep-box">
+              <strong
+                style="
+                  display: block;
+                  margin-bottom: 3px;
+                  color: var(--text-primary);
+                "
+                >Surface Preparation:</strong
+              >
+              1. Clean with mild dish soap and warm water. DO NOT use acetone,
+              which melts and fogs acrylic plastics!<br />2. For rigid plastics
+              to be painted with brush acrylics: Lightly scuff surface with
+              600-grit sandpaper for mechanical bite.<br />3. Spray 1 light mist
+              of plastic primer if covering large areas.
+            </div>
+
+            <div
+              style="
+                font-size: 0.75rem;
+                color: var(--text-muted);
+                font-style: italic;
+              "
+            >
+              Varnishing: Seal with water-based acrylic aerosol gloss or satin
+              varnish. Avoid harsh solvent lacquers that craze plastic.
+            </div>
+          </div>
+
+          <div class="surface-guide-card">
+            <div class="surface-card-header">
+              <div>
+                <h3 style="font-size: 1.25rem">
+                  Terracotta, Bisque & Air-Dry Clay
+                </h3>
+                <span
+                  style="
+                    font-size: 0.75rem;
+                    color: var(--accent);
+                    font-weight: 600;
+                  "
+                  >Earthen & Sculptural Substrates</span
+                >
+              </div>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary)">
+              Porous baked red terracotta pots, unglazed ceramic bisque, and
+              air-dry clay sculptures. Highly porous and absorbs water rapidly.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 0.35rem">
+              <span
+                style="
+                  font-size: 0.75rem;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  color: var(--text-muted);
+                "
+              >
+                Available Formats & Tooth
+              </span>
+
+              <div
+                style="
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 6px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <strong>Terracotta Flower Pots</strong> • •
+                <span style="color: var(--accent); font-weight: 600"
+                  >Sandy porous clay</span
+                >
+                <div
+                  style="
+                    font-size: 0.73rem;
+                    color: var(--text-secondary);
+                    margin-top: 2px;
+                  "
+                >
+                  Best for: Boho plant pot painting, mandala art, garden
+                  ornaments
+                </div>
+              </div>
+
+              <div
+                style="
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 6px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <strong>Air-Dry Clay Sculptures (DAS / Fimo)</strong> • •
+                <span style="color: var(--accent); font-weight: 600"
+                  >Chalky smooth to textured</span
+                >
+                <div
+                  style="
+                    font-size: 0.73rem;
+                    color: var(--text-secondary);
+                    margin-top: 2px;
+                  "
+                >
+                  Best for: Miniature figurines, jewelry trays, decorative wall
+                  hangings
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 0.45rem">
+              <span
+                style="
+                  font-size: 0.75rem;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  color: var(--text-muted);
+                "
+              >
+                Medium Compatibility
+              </span>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Acrylic Paints (Mont Marte, Camel)</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >100%</span
+                >
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Acrylic Paint Markers (Posca, Doms)</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >98%</span
+                >
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.78rem;
+                  background: var(--bg-surface);
+                  padding: 5px 10px;
+                  border-radius: 6px;
+                  border: 1px solid var(--border-main);
+                "
+              >
+                <span>Gouache Colours</span>
+                <span class="mono" style="color: #52b788; font-weight: 700"
+                  >85%</span
+                >
+              </div>
+            </div>
+
+            <div class="surface-prep-box">
+              <strong
+                style="
+                  display: block;
+                  margin-bottom: 3px;
+                  color: var(--text-primary);
+                "
+                >Surface Preparation:</strong
+              >
+              1. Wipe dust off with a barely damp sponge and let dry 30
+              minutes.<br />2. Clay absorbs moisture fast: seal with 1 coat of
+              diluted acrylic gesso (70% gesso + 30% water) or clear acrylic
+              varnish primer.<br />3. This prevents the raw clay from draining
+              water out of your acrylic paint too fast.
+            </div>
+
+            <div
+              style="
+                font-size: 0.75rem;
+                color: var(--text-muted);
+                font-style: italic;
+              "
+            >
+              Varnishing: Coat with 2-3 layers of exterior gloss varnish if used
+              for outdoor planters, or brush-on polyurethane.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--  Sliding Settings Drawer (Side Navigation Bar) -->
+
+    <!-- ==========================================
+          SLIDING SETTINGS SIDEBAR
+         ========================================== -->
+    <div class="settings-drawer-backdrop" id="settings-drawer-backdrop"></div>
+    <aside
+      class="settings-drawer"
+      id="settings-drawer"
+      aria-label="Studio Preferences"
+    >
+      <div class="drawer-header">
+        <div class="drawer-title">
+          <svg
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="3" />
+            <path
+              d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
+            />
+          </svg>
+          <h3>Studio Preferences</h3>
+        </div>
+        <button
+          class="drawer-close-btn"
+          id="btn-close-settings"
+          title="Close Settings"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <div class="drawer-nav-tabs">
+        <button
+          class="settings-tab-btn active"
+          data-settings-tab="panel-themes"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            width="14"
+            height="14"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="12" cy="12" r="9" />
+          </svg>
+          <span>Themes</span>
+        </button>
+        <button class="settings-tab-btn" data-settings-tab="panel-fonts">
+          <svg
+            viewBox="0 0 24 24"
+            width="14"
+            height="14"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <polyline points="4 7 4 4 20 4 20 7" />
+            <line x1="9" y1="20" x2="15" y2="20" />
+            <line x1="12" y1="4" x2="12" y2="20" />
+          </svg>
+          <span>Typography</span>
+        </button>
+        <button class="settings-tab-btn" data-settings-tab="panel-sound">
+          <svg
+            viewBox="0 0 24 24"
+            width="14"
+            height="14"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+          </svg>
+          <span>Audio</span>
+        </button>
+        <button class="settings-tab-btn" data-settings-tab="panel-about">
+          <svg
+            viewBox="0 0 24 24"
+            width="14"
+            height="14"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <line x1="12" y1="16" x2="12" y2="12" />
+            <line x1="12" y1="8" x2="12.01" y2="8" />
+          </svg>
+          <span>About</span>
+        </button>
+      </div>
+
+      <!-- Drawer Content Area (Smooth Scrollable Container) -->
+      <div class="drawer-content">
+        <!-- TAB 1: THEMES & ACCENT -->
+        <div class="settings-panel active" id="panel-themes">
+          <div class="settings-group">
+            <label class="settings-label"
+              >Color Theme Modes (Strictly 3 Master Themes)</label
+            >
+            <div class="settings-desc">
+              Choose your visual environment: Clean Studio Light, Deep Nev Blue,
+              or Space Black.
+            </div>
+            <div class="theme-options-grid">
+              <button class="theme-choice-btn" data-theme="light">Light</button>
+              <button class="theme-choice-btn" data-theme="navy">
+                Nev Blue
+              </button>
+              <button class="theme-choice-btn active" data-theme="atelier-dark">
+                Black
+              </button>
+            </div>
+          </div>
+
+          <div class="settings-group wallpaper-settings-group">
+            <label class="settings-label" for="settings-wallpaper-input"
+              >Studio Background Image</label
+            >
+            <div class="settings-desc">
+              Choose a picture for the whole studio. PigmentIQ will sample its
+              colors and harmonize the accent tiles, like Windows
+              personalization. Images stay on this device.
+            </div>
+            <input
+              type="file"
+              id="settings-wallpaper-input"
+              accept="image/*"
+              class="wallpaper-file-input"
+            />
+            <div class="wallpaper-actions wallpaper-primary-actions">
+              <label class="wallpaper-pick-btn" for="settings-wallpaper-input"
+                >Choose image</label
+              >
+              <button
+                type="button"
+                id="settings-wallpaper-clear"
+                class="wallpaper-clear-btn"
+              >
+                Restore plain background
+              </button>
+            </div>
+            <div
+              id="settings-wallpaper-status"
+              class="wallpaper-status"
+              aria-live="polite"
+            >
+              Plain studio background is active.
+            </div>
+            <div
+              class="wallpaper-preview-wrap"
+              id="wallpaper-preview-wrap"
+              hidden
+            >
+              <img
+                id="wallpaper-preview"
+                alt="Selected studio background preview"
+              />
+              <span>BACKGROUND PREVIEW</span>
+            </div>
+            <div class="wallpaper-options">
+              <div class="wallpaper-option-row">
+                <label class="settings-label" for="wallpaper-fit"
+                  >Image fit</label
+                >
+                <select id="wallpaper-fit" class="wallpaper-select">
+                  <option value="cover">Fill screen</option>
+                  <option value="contain">Fit entire image</option>
+                  <option value="auto">Original size / tile</option>
+                </select>
+              </div>
+              <div class="wallpaper-option-row">
+                <label class="settings-label" for="wallpaper-position"
+                  >Image position</label
+                >
+                <select id="wallpaper-position" class="wallpaper-select">
+                  <option value="center">Center</option>
+                  <option value="top">Top</option>
+                  <option value="bottom">Bottom</option>
+                  <option value="left">Left</option>
+                  <option value="right">Right</option>
+                  <option value="left top">Top left</option>
+                  <option value="right top">Top right</option>
+                  <option value="left bottom">Bottom left</option>
+                  <option value="right bottom">Bottom right</option>
+                </select>
+              </div>
+              <div class="wallpaper-option-row wallpaper-range-row">
+                <label class="settings-label" for="wallpaper-overlay"
+                  >Readability overlay
+                  <span id="wallpaper-overlay-value">38%</span></label
+                >
+                <input
+                  type="range"
+                  id="wallpaper-overlay"
+                  min="0"
+                  max="75"
+                  step="1"
+                  value="38"
+                />
+              </div>
+              <div class="wallpaper-option-row wallpaper-range-row">
+                <label class="settings-label" for="wallpaper-dim"
+                  >Image brightness
+                  <span id="wallpaper-dim-value">100%</span></label
+                >
+                <input
+                  type="range"
+                  id="wallpaper-dim"
+                  min="35"
+                  max="130"
+                  step="1"
+                  value="100"
+                />
+              </div>
+              <div class="wallpaper-option-row wallpaper-range-row">
+                <label class="settings-label" for="wallpaper-blur"
+                  >Background softness
+                  <span id="wallpaper-blur-value">0px</span></label
+                >
+                <input
+                  type="range"
+                  id="wallpaper-blur"
+                  min="0"
+                  max="8"
+                  step="1"
+                  value="0"
+                />
+              </div>
+              <p class="wallpaper-hint">
+                Tip: use a high-resolution image and a moderate overlay to keep
+                text, controls, and color swatches easy to read.
+              </p>
+            </div>
+          </div>
+
+          <div class="settings-group">
+            <label class="settings-label">Custom Studio Accent Color</label>
+            <div class="settings-desc">
+              Personalize all buttons, focus rings, and highlighting accents
+              with your favorite shade.
+            </div>
+            <div style="display: flex; align-items: center; gap: 1rem">
+              <input
+                type="color"
+                id="settings-accent-picker"
+                value="#2997ff"
+                style="
+                  width: 42px;
+                  height: 42px;
+                  border-radius: 8px;
+                  border: 1px solid var(--border-main);
+                  cursor: pointer;
+                  background: transparent;
+                "
+              />
+              <span style="font-size: 0.85rem; color: var(--text-secondary)"
+                >Click to adjust custom pigment accent</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 2: POPPINS MASTER TYPOGRAPHY & WEIGHT VARIANTS -->
+        <div class="settings-panel" id="panel-fonts">
+          <div class="settings-group">
+            <div class="settings-label">
+              <span>Poppins Master Typography</span>
+              <span
+                id="active-font-badge"
+                class="mono"
+                style="
+                  font-size: 0.72rem;
+                  color: var(--accent);
+                  background: var(--badge-bg);
+                  padding: 2px 8px;
+                  border-radius: 4px;
+                "
+                >Active: Poppins Regular (400)</span
+              >
+            </div>
+            <div class="settings-desc">
+              Poppins is the fixed master font for PigmentIQ. Select your
+              desired font weight and styling variant below:
+            </div>
+
+            <div
+              style="
+                font-size: 0.76rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.04em;
+                color: var(--text-muted);
+                margin: 0.75rem 0 0.4rem;
+              "
+            >
+              Standard / Upright Variants
+            </div>
+            <div class="poppins-variant-grid">
+              <button
+                class="poppins-variant-btn"
+                data-variant="thin"
+                data-weight="100"
+                data-heading="300"
+                data-style="normal"
+              >
+                <span class="poppins-variant-name" style="font-weight: 100"
+                  >Thin</span
+                >
+                <span class="poppins-variant-sub">100 Weight</span>
+              </button>
+              <button
+                class="poppins-variant-btn"
+                data-variant="light"
+                data-weight="300"
+                data-heading="500"
+                data-style="normal"
+              >
+                <span class="poppins-variant-name" style="font-weight: 300"
+                  >Light</span
+                >
+                <span class="poppins-variant-sub">300 Weight</span>
+              </button>
+              <button
+                class="poppins-variant-btn active"
+                data-variant="regular"
+                data-weight="400"
+                data-heading="600"
+                data-style="normal"
+              >
+                <span class="poppins-variant-name" style="font-weight: 400"
+                  >Regular</span
+                >
+                <span class="poppins-variant-sub">400 Default</span>
+              </button>
+              <button
+                class="poppins-variant-btn"
+                data-variant="medium"
+                data-weight="500"
+                data-heading="700"
+                data-style="normal"
+              >
+                <span class="poppins-variant-name" style="font-weight: 500"
+                  >Medium</span
+                >
+                <span class="poppins-variant-sub">500 Weight</span>
+              </button>
+              <button
+                class="poppins-variant-btn"
+                data-variant="semibold"
+                data-weight="600"
+                data-heading="800"
+                data-style="normal"
+              >
+                <span class="poppins-variant-name" style="font-weight: 600"
+                  >SemiBold</span
+                >
+                <span class="poppins-variant-sub">600 Weight</span>
+              </button>
+              <button
+                class="poppins-variant-btn"
+                data-variant="bold"
+                data-weight="700"
+                data-heading="900"
+                data-style="normal"
+              >
+                <span class="poppins-variant-name" style="font-weight: 700"
+                  >Bold</span
+                >
+                <span class="poppins-variant-sub">700 Weight</span>
+              </button>
+              <button
+                class="poppins-variant-btn"
+                data-variant="extrabold"
+                data-weight="800"
+                data-heading="900"
+                data-style="normal"
+              >
+                <span class="poppins-variant-name" style="font-weight: 800"
+                  >ExtraBold</span
+                >
+                <span class="poppins-variant-sub">800 Weight</span>
+              </button>
+              <button
+                class="poppins-variant-btn"
+                data-variant="black"
+                data-weight="900"
+                data-heading="900"
+                data-style="normal"
+              >
+                <span class="poppins-variant-name" style="font-weight: 900"
+                  >Black</span
+                >
+                <span class="poppins-variant-sub">900 Heavy</span>
+              </button>
+            </div>
+
+            <div
+              style="
+                font-size: 0.76rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.04em;
+                color: var(--text-muted);
+                margin: 0.75rem 0 0.4rem;
+              "
+            >
+              Italic Styles
+            </div>
+            <div class="poppins-variant-grid">
+              <button
+                class="poppins-variant-btn"
+                data-variant="thin-italic"
+                data-weight="100"
+                data-heading="300"
+                data-style="italic"
+              >
+                <span
+                  class="poppins-variant-name"
+                  style="font-weight: 100; font-style: italic"
+                  >Thin Italic</span
+                >
+                <span class="poppins-variant-sub">100i Slanted</span>
+              </button>
+              <button
+                class="poppins-variant-btn"
+                data-variant="italic"
+                data-weight="400"
+                data-heading="600"
+                data-style="italic"
+              >
+                <span
+                  class="poppins-variant-name"
+                  style="font-weight: 400; font-style: italic"
+                  >Regular Italic</span
+                >
+                <span class="poppins-variant-sub">400i Slanted</span>
+              </button>
+              <button
+                class="poppins-variant-btn"
+                data-variant="medium-italic"
+                data-weight="500"
+                data-heading="700"
+                data-style="italic"
+              >
+                <span
+                  class="poppins-variant-name"
+                  style="font-weight: 500; font-style: italic"
+                  >Medium Italic</span
+                >
+                <span class="poppins-variant-sub">500i Slanted</span>
+              </button>
+              <button
+                class="poppins-variant-btn"
+                data-variant="semibold-italic"
+                data-weight="600"
+                data-heading="800"
+                data-style="italic"
+              >
+                <span
+                  class="poppins-variant-name"
+                  style="font-weight: 600; font-style: italic"
+                  >SemiBold Italic</span
+                >
+                <span class="poppins-variant-sub">600i Slanted</span>
+              </button>
+              <button
+                class="poppins-variant-btn"
+                data-variant="bold-italic"
+                data-weight="700"
+                data-heading="900"
+                data-style="italic"
+              >
+                <span
+                  class="poppins-variant-name"
+                  style="font-weight: 700; font-style: italic"
+                  >Bold Italic</span
+                >
+                <span class="poppins-variant-sub">700i Slanted</span>
+              </button>
+            </div>
+
+            <div class="font-preview-box" id="font-live-preview">
+              The quick brown fox jumps over the lazy dog • Poppins Studio
+              Typography • 0123456789 • MM-14 Ultramarine Blue 100%
+            </div>
+          </div>
+
+          <div class="settings-group">
+            <div class="settings-label">
+              <span>Font Size Scale</span>
+              <span
+                class="mono"
+                id="font-size-value-text"
+                style="
+                  font-size: 0.85rem;
+                  color: var(--accent);
+                  font-weight: 800;
+                "
+                >15px</span
+              >
+            </div>
+            <div class="settings-desc">
+              Adjust the global UI font scale to suit your PC display resolution
+              and preference.
+            </div>
+
+            <div class="slider-container" style="margin-bottom: 0.75rem">
+              <input
+                type="range"
+                id="settings-font-size-slider"
+                min="12"
+                max="22"
+                value="15"
+              />
+            </div>
+
+            <div style="display: flex; gap: 0.45rem; flex-wrap: wrap">
+              <button class="font-preset-tag font-size-btn" data-size="13">
+                Compact (13px)
+              </button>
+              <button
+                class="font-preset-tag font-size-btn active"
+                data-size="15"
+              >
+                Standard (15px)
+              </button>
+              <button class="font-preset-tag font-size-btn" data-size="17">
+                Comfortable (17px)
+              </button>
+              <button class="font-preset-tag font-size-btn" data-size="19">
+                Large (19px)
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 3: TACTILE SOUND FEEDBACK -->
+        <div class="settings-panel" id="panel-sound">
+          <div class="settings-group">
+            <label class="settings-label">Tap & Click Sound Type</label>
+            <div class="settings-desc">
+              Procedural Web Audio API sound feedback for every touch, swatch
+              click, and button. Completely isolated from visual themes.
+            </div>
+            <div class="sound-options-grid" style="margin-bottom: 1rem">
+              <button class="sound-choice-btn active" data-sound="wood">
+                Wood Tap
+              </button>
+              <button class="sound-choice-btn" data-sound="click">
+                Mech Click
+              </button>
+              <button class="sound-choice-btn" data-sound="water">
+                Water Drop
+              </button>
+              <button class="sound-choice-btn" data-sound="brush">
+                Brush Swish
+              </button>
+              <button class="sound-choice-btn" data-sound="pop">
+                Bubble Pop
+              </button>
+              <button class="sound-choice-btn" data-sound="mute">Mute</button>
+            </div>
+
+            <label class="settings-label" style="font-size: 0.85rem"
+              >Volume Level</label
+            >
+            <div class="slider-container">
+              <input
+                type="range"
+                id="settings-volume-slider"
+                min="0"
+                max="100"
+                value="40"
+              />
+              <span
+                class="mono"
+                id="volume-value-text"
+                style="font-size: 0.85rem; width: 45px"
+                >40%</span
+              >
+              <button
+                class="secondary-btn"
+                id="btn-test-sound"
+                style="padding: 4px 12px; font-size: 0.75rem"
+              >
+                Test
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 4: ABOUT & CREATOR -->
+        <div class="settings-panel" id="panel-about">
+          <div class="about-creator-card">
+            <div class="creator-avatar">
+              <svg
+                viewBox="0 0 24 24"
+                width="28"
+                height="28"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <div class="creator-kicker">DEVELOPED & DESIGNED BY</div>
+            <div class="creator-name">Md. Shihab Sikder</div>
+            <div class="creator-title">Creative Coder, ML & IoT Enthusiast</div>
+
+            <div class="creation-timestamp-pill">
+              <strong
+                >Created: Saturday, October 17, 2026 • 07:57 PM (GMT+6)</strong
+              >
+            </div>
+
+            <p class="creator-bio">
+              PigmentIQ Studio bridges digital color theory and physical pigment
+              mixing by converting screen hues and reference photos into
+              reproducible paint formulas. Engineered to eliminate paint waste
+              and guesswork, its vision is to empower traditional artists with
+              fast, accessible color math making the leap from screen to canvas
+              seamless and precise
+            </p>
+
+            <a
+              href="https://github.com/mdshihab56"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="github-btn"
+            >
+              <svg
+                height="18"
+                width="18"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                ></path>
+              </svg>
+              <span>@mdshihab56 on GitHub</span>
+            </a>
+          </div>
+
+          <div
+            style="
+              font-size: 0.8rem;
+              color: var(--text-muted);
+              line-height: 1.5;
+              border-top: 1px solid var(--border-main);
+              padding-top: 0.85rem;
+              margin-top: 1rem;
+            "
+          >
+            <strong>Engineered with:</strong> <br />
+            ■ Subtractive pigment mixing model (Kubelka-Munk spectral
+            approximation), <br />
+            ■ Delta-E 2000 precision color matching, <br />
+            ■ Authentic Mont Marte 42-shade database, <br />
+            ■ 18-step graphite scale (9H-14B), <br />
+            ■ Procedural Web Audio API feedback,<br />
+            ■ Multi-substrate guides <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <strong
+              >PigmentIQ - Artisan Studio & Color Palette Workbench V1.0</strong
+            >
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ==========================================
+         A4 SPECIFICATION SHEET EXPORT MODAL
+         ========================================== -->
+    <div class="export-modal-backdrop" id="export-modal-backdrop">
+      <div class="export-modal-window">
+        <div class="export-modal-header">
+          <div class="export-modal-title">
+            <svg
+              viewBox="0 0 24 24"
+              width="22"
+              height="22"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            <div>
+              <h3>Export A4 Specification Sheet</h3>
+              <span class="export-subtitle"
+                >ISO 216 Standard A4 • 300/150 DPI High-Res Print
+                Specification</span
+              >
+            </div>
+          </div>
+          <button
+            class="modal-close-btn"
+            id="btn-close-export"
+            title="Close Export Dialog"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="export-modal-body">
+          <div class="export-form-col">
+            <!-- Palette Name -->
+            <div class="export-form-group">
+              <label for="export-palette-name">Palette / Study Title</label>
+              <input
+                type="text"
+                id="export-palette-name"
+                class="export-input"
+                placeholder="e.g. Sunset Impressionism Study"
+                value="Sunset Impressionism Study"
+              />
+            </div>
+
+            <!-- Creator Name & SL -->
+            <div class="export-form-row">
+              <div class="export-form-group" style="flex: 1.4">
+                <label for="export-creator-name">Artist / Creator Name</label>
+                <input
+                  type="text"
+                  id="export-creator-name"
+                  class="export-input"
+                  value="lorem ipsam"
+                />
+              </div>
+              <div class="export-form-group" style="flex: 1">
+                <label for="export-sl-number">SL Number</label>
+                <input
+                  type="text"
+                  id="export-sl-number"
+                  class="export-input mono"
+                  value="SL-2026-001"
+                />
+              </div>
+            </div>
+
+            <!-- For What I Will Use (Medium / Purpose) -->
+            <div class="export-form-group">
+              <label for="export-purpose"
+                >For What I Will Use (Medium & Substrate)</label
+              >
+              <input
+                type="text"
+                id="export-purpose"
+                class="export-input"
+                placeholder="e.g. Acrylic Landscape on Stretched Canvas 300 GSM"
+                value="Acrylic Landscape on Stretched Canvas 300 GSM"
+              />
+            </div>
+
+            <!-- Format Choice (PDF, PNG, JPG) -->
+            <div class="export-form-group">
+              <label>Export Format (Standard A4)</label>
+              <div class="export-format-selector">
+                <button
+                  type="button"
+                  class="export-format-btn active"
+                  data-format="pdf"
+                >
+                  <span class="format-badge">PDF</span>
+                  <span class="format-desc">Vector Print Ready</span>
+                </button>
+                <button
+                  type="button"
+                  class="export-format-btn"
+                  data-format="png"
+                >
+                  <span class="format-badge">PNG</span>
+                  <span class="format-desc">Lossless High-Res</span>
+                </button>
+                <button
+                  type="button"
+                  class="export-format-btn"
+                  data-format="jpg"
+                >
+                  <span class="format-badge">JPG</span>
+                  <span class="format-desc">Standard Image</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Font Choice for Export Sheet -->
+            <div class="export-form-group">
+              <label for="export-font-select"
+                >Choose Font for Exported File</label
+              >
+              <div style="display: flex; gap: 0.5rem; flex-direction: column">
+                <select id="export-font-select" class="export-input">
+                  <option value="'Poppins', sans-serif" selected>
+                    Poppins Regular (Default)
+                  </option>
+                  <option value="'Poppins', sans-serif">
+                    Poppins SemiBold
+                  </option>
+                  <option value="'Poppins', sans-serif">Poppins Bold</option>
+                  <option value="'Poppins', sans-serif">Poppins Medium</option>
+                  <option value="'Poppins', sans-serif">Poppins Light</option>
+                  <option value="'Poppins', sans-serif">Poppins Italic</option>
+                  <option
+                    value="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif"
+                  >
+                    Apple System / SF Pro
+                  </option>
+                  <option value="'Plus Jakarta Sans', sans-serif">
+                    Plus Jakarta Sans
+                  </option>
+                  <option value="'Brass Mono', monospace">Brass Mono</option>
+                  <option value="'Monorama', monospace">Monorama</option>
+                  <option value="'Cascadia Code', monospace">
+                    Cascadia Code
+                  </option>
+                  <option value="'JetBrains Mono', monospace">
+                    JetBrains Mono
+                  </option>
+                  <option value="Georgia, serif">Georgia Editorial</option>
+                  <option value="'Segoe UI', sans-serif">
+                    Segoe UI (Windows)
+                  </option>
+                  <option value="custom">Custom Font Name...</option>
+                </select>
+                <input
+                  type="text"
+                  id="export-font-custom"
+                  class="export-input"
+                  placeholder="Type installed font name..."
+                  style="display: none"
+                />
+              </div>
+            </div>
+
+            <!-- Watermark Option -->
+            <div class="export-form-group">
+              <div class="export-checkbox-row">
+                <label class="custom-checkbox-container">
+                  <input type="checkbox" id="export-watermark-toggle" />
+                  <span class="checkmark"></span>
+                  <span style="font-weight: 600; font-size: 0.84rem"
+                    >Include Watermark (Optional)</span
+                  >
+                </label>
+              </div>
+              <input
+                type="text"
+                id="export-watermark-text"
+                class="export-input"
+                value="PigmentIQ Studio • Md. Shihab Sikder"
+                placeholder="Watermark text..."
+                style="margin-top: 0.4rem; display: none"
+              />
+            </div>
+
+            <!-- Save Destination Option -->
+            <div class="export-form-group">
+              <label>File Destination Setting</label>
+              <div class="export-destination-options">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="export-dest"
+                    value="picker"
+                    checked
+                  />
+                  <span
+                    >Choose Destination via Save Dialog (File System
+                    Access)</span
+                  >
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="export-dest" value="direct" />
+                  <span>Default Browser Downloads Folder</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Default Timestamp Note at Footer Right -->
+            <div class="export-timestamp-info">
+              <svg
+                viewBox="0 0 24 24"
+                width="14"
+                height="14"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              <span
+                >Default footer right stamp:
+                <strong id="export-preview-timestamp"
+                  >Saturday, October 17, 2026 • 07:57 PM (GMT+6)</strong
+                ></span
+              >
+            </div>
+          </div>
+
+          <!-- Right Column: Live Mini A4 Preview -->
+          <div class="export-preview-col">
+            <div class="a4-preview-title">A4 Sheet Live Preview</div>
+            <div class="a4-preview-wrapper">
+              <canvas
+                id="a4-mini-preview-canvas"
+                width="310"
+                height="438"
+              ></canvas>
+            </div>
+            <div
+              style="
+                font-size: 0.72rem;
+                color: var(--text-muted);
+                text-align: center;
+                margin-top: 0.4rem;
+              "
+            >
+              Exact A4 Aspect Ratio (1 : 1.414)
+            </div>
+          </div>
+        </div>
+
+        <!-- Export Modal Actions -->
+        <div class="export-modal-actions">
+          <button class="secondary-btn" id="btn-cancel-export">Cancel</button>
+          <button class="primary-btn" id="btn-confirm-export">
+            <svg
+              viewBox="0 0 24 24"
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            <span id="btn-export-text">Download A4 PDF</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notifications Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <script>
+      (() => {
+        const splash = document.getElementById("pigment-splash");
+        if (!splash) return;
+        const dismiss = () => {
+          splash.classList.add("is-leaving");
+          window.setTimeout(() => splash.remove(), 750);
+        };
+        window.addEventListener(
+          "load",
+          () => window.setTimeout(dismiss, 1350),
+          { once: true },
+        );
+        window.setTimeout(dismiss, 4200); // fallback for slow/offline font or asset loading
+      })();
+    </script>
+    <!-- JavaScript Modules (Executed in clean order) -->
+    <script src="js/audio.js"></script>
+    <script src="js/color-math.js"></script>
+    <script src="js/montmarte-db.js"></script>
+    <script src="js/brands-db.js"></script>
+    <script src="js/surfaces-db.js"></script>
+    <script src="js/sketch-db.js"></script>
+    <script src="js/image-extractor.js"></script>
+    <script src="js/recipe-engine.js"></script>
+    <script src="js/export-manager.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
