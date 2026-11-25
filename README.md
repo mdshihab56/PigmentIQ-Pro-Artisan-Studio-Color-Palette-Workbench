@@ -19,7 +19,7 @@ Whether you work on stretched canvas, cartridge paper, canvas pads, wood, glass,
 
 
 ---
-## Data Flow
+## Data Flow (v1.0)
 <img width="8000" height="4500" alt="PigmentIQ Pro flow chart" src="https://github.com/user-attachments/assets/ca26ae42-c156-4f71-9cb9-c73989c3224a" />
 
 ---
