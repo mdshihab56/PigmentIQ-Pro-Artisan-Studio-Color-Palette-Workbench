@@ -1,0 +1,11 @@
+Latest Updates
+
+Generic Pigment Studios: Added three new workbenches — Synthetic Polyvinyl Distemper (SPD), Enamel Color Studio, and Water Color Mixing Studio.
+
+Image-Based Shade Extraction: Upload an image, sample colors directly from it, or select shades from the extracted palette.
+
+AI-Assisted Pigment Proportions: Get estimated generic pigment combinations and percentage-based proportions for selected target colors.
+
+Target Color Tools: Retained the color picker, HEX display, and interactive shade selection.
+
+Note: Pigment proportions are computational estimates. Actual results may vary depending on pigment properties, paint bases, and mixing conditions.
