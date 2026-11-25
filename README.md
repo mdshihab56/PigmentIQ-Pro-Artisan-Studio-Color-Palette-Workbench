@@ -51,7 +51,15 @@ Whether you work on stretched canvas, cartridge paper, canvas pads, wood, glass,
 - **Interactive Darkness Slider**: Slide from 0% (Shadow) to 100% (Highlight) for instant pencil grade recommendations.
 - **Preservation Tools Guide**: Proper usage of tortillons, kneaded erasers, mono zero erasers, and workable fixatives.
 
-### 5.  Popular Art Brands Encyclopedia
+### 5. Dedicated Paint Medium Studios: SPD, Enamel & Watercolor
+- **SPD (Synthetic Polyvinyl Distemper)** workbench with Burger Color or generic guidance selection.
+- **Enamel** workbench for Jhilik enamel or generic guidance.
+- **Water Color** workbench for transparent pigment mixing direction.
+- Each workbench includes an interactive target-color picker, live HEX display, and medium-specific cautions. Suggested ratios are estimates, not manufacturer-approved formulas.
+
+
+
+### 6.  Popular Art Brands Encyclopedia
 - Technical breakdowns for:
   - **Camel (Kokuyo Camlin)**: Artists Acrylics, Watercolors, Pastels & Brush Pens.
   - **Doms**: Super Soft Brush Pens, C3 Acrylic Paint Markers, Oil Pastels.
@@ -67,7 +75,7 @@ Whether you work on stretched canvas, cartridge paper, canvas pads, wood, glass,
   - **Royal Talens**: Watercolor, Oil and Acrylic
   - **Liquitex**: Acrylic Paint, Acrylic Mediums
 
-### 6.  Surfaces & Substrates Master Guide
+### 7.  Surfaces & Substrates Master Guide
 - Comprehensive preparation, priming, compatibility ratings, and varnishing instructions for:
   - **Canvas** (Stretched cotton duck, linen, canvas boards)
   - **Canvas Pads** (Glue-bound primed woven canvas sheets)
@@ -78,7 +86,7 @@ Whether you work on stretched canvas, cartridge paper, canvas pads, wood, glass,
   - **Plastic & Acrylic Sheets** (Perspex, Yupo synthetic paper)
   - **Terracotta & Clay** (Air-dry clay, earthenware flower pots)
 
-### 7.  A4 Color Specification Sheet Exporter (PDF, PNG, JPG)
+### 8.  A4 Color Specification Sheet Exporter (PDF, PNG, JPG)
 - **Standard A4 Layout**: Engineered to ISO 216 standard proportions (210 × 297 mm) with print-ready high-resolution rendering.
 - **Export Customization Dialog**:
   - **Palette / Study Title**: Custom title for your palette study.
@@ -92,12 +100,12 @@ Whether you work on stretched canvas, cartridge paper, canvas pads, wood, glass,
   - **Default Date & Time Stamp**: Rendered cleanly at the footer right side (`Saturday, October 17, 2026 • 07:57 PM (GMT+6)`).
   - **Live Miniature A4 Preview**: Live thumbnail preview of the generated sheet before downloading!
 
-### 8.  Slide Navigation Drawer
+### 9.  Slide Navigation Drawer
 - Smooth Google Material / Apple style side drawer sliding in from the right edge with backdrop blur scrim.
 - Clean navigation tabs for Themes, PC Installed Fonts & Scaling, Audio Feedback, and About Creator.
 - Fluid, natural scrolling container that adapts effortlessly to any display size.
 
-### 9.  Artisan Audio & Tactile Feedback
+### 10.  Artisan Audio & Tactile Feedback
 - Built-in procedural **Web Audio API** sound synthesizer (zero external audio files needed):
   - **Wooden Easel Tap** (artisan studio feel)
   - **Mechanical Click**
@@ -107,7 +115,7 @@ Whether you work on stretched canvas, cartridge paper, canvas pads, wood, glass,
   - **Mute Mode**
 - Dedicated master volume slider (0-100%) and quick sound toggle button with vector speaker icons.
 
-### 10.  Aesthetic Themes & Customization
+### 11.  Aesthetic Themes & Customization
 - **Atelier Dark** (Default minimalist charcoal)
 - **Discord Dark** (Authentic Discord palette: `#313338`, `#2b2d31`, `#5865F2` blurple)
 - **Linen Warm** (Warm canvas linen, beige and sepia minimalist)
